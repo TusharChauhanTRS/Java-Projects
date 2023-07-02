@@ -58,15 +58,15 @@ public class project {
                     System.out.println("Thank You your order is on it's way");
                 } else {
                     System.out.println("You have ordered " + ans2);
-                }
-                System.out.println("Please confirm your password: ");
-                pass = sc.next();
-
-                while (!pass.equals(pass1)) {
-                    System.out.println("This is not the right password please try again: ");
+                    System.out.println("Please confirm your password: ");
                     pass = sc.next();
+
+                    while (!pass.equals(pass1)) {
+                        System.out.println("This is not the right password please try again: ");
+                        pass = sc.next();
+                     }
+                   System.out.println("Thank You your order is on it's way");
                 }
-                System.out.println("Thank You your order is on it's way");
             }
         } else {
             System.out.println("Alright have a good day");
